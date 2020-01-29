@@ -32,14 +32,14 @@ function openssl(f::Function; adjust_PATH::Bool = true, adjust_LIBPATH::Bool = t
     env_mapping = Dict{String,String}()
     if adjust_PATH
         if !isempty(get(ENV, "PATH", ""))
-            env_mapping["PATH"] = string(ENV["PATH"], ';', PATH)
+            env_mapping["PATH"] = string(PATH, ';', ENV["PATH"])
         else
             env_mapping["PATH"] = PATH
         end
     end
     if adjust_LIBPATH
         if !isempty(get(ENV, LIBPATH_env, ""))
-            env_mapping[LIBPATH_env] = string(ENV[LIBPATH_env], ';', LIBPATH)
+            env_mapping[LIBPATH_env] = string(LIBPATH, ';', ENV[LIBPATH_env])
         else
             env_mapping[LIBPATH_env] = LIBPATH
         end
@@ -68,21 +68,23 @@ const libssl = "libssl-1_1.dll"
 Open all libraries
 """
 function __init__()
-    global prefix = abspath(joinpath(@__DIR__, ".."))
+    global artifact_dir = abspath(artifact"OpenSSL")
 
     # Initialize PATH and LIBPATH environment variable listings
     global PATH_list, LIBPATH_list
-    global libcrypto_path = abspath(joinpath(artifact"OpenSSL", libcrypto_splitpath...))
+    # We first need to add to LIBPATH_list the libraries provided by Julia
+    append!(LIBPATH_list, [Sys.BINDIR, joinpath(Sys.BINDIR, Base.LIBDIR, "julia"), joinpath(Sys.BINDIR, Base.LIBDIR)])
+    global libcrypto_path = normpath(joinpath(artifact_dir, libcrypto_splitpath...))
 
     # Manually `dlopen()` this right now so that future invocations
     # of `ccall` with its `SONAME` will find this path immediately.
     global libcrypto_handle = dlopen(libcrypto_path)
     push!(LIBPATH_list, dirname(libcrypto_path))
 
-    global openssl_path = abspath(joinpath(artifact"OpenSSL", openssl_splitpath...))
+    global openssl_path = normpath(joinpath(artifact_dir, openssl_splitpath...))
 
     push!(PATH_list, dirname(openssl_path))
-    global libssl_path = abspath(joinpath(artifact"OpenSSL", libssl_splitpath...))
+    global libssl_path = normpath(joinpath(artifact_dir, libssl_splitpath...))
 
     # Manually `dlopen()` this right now so that future invocations
     # of `ccall` with its `SONAME` will find this path immediately.
