@@ -74,8 +74,6 @@ function __init__()
 
     # Initialize PATH and LIBPATH environment variable listings
     global PATH_list, LIBPATH_list
-    # Lastly, we need to add to LIBPATH_list the libraries provided by Julia
-    append!(LIBPATH_list, [joinpath(Sys.BINDIR, Base.LIBDIR, "julia"), joinpath(Sys.BINDIR, Base.LIBDIR)])
     global libcrypto_path = normpath(joinpath(artifact_dir, libcrypto_splitpath...))
 
     # Manually `dlopen()` this right now so that future invocations
@@ -97,12 +95,5 @@ function __init__()
     filter!(!isempty, unique!(PATH_list))
     filter!(!isempty, unique!(LIBPATH_list))
     global PATH = join(PATH_list, ':')
-    global LIBPATH = join(LIBPATH_list, ':')
-
-    # Add each element of LIBPATH to our DL_LOAD_PATH (necessary on platforms
-    # that don't honor our "already opened" trick)
-    #for lp in LIBPATH_list
-    #    push!(DL_LOAD_PATH, lp)
-    #end
-end  # __init__()
+    global LIBPATH = join(vcat(LIBPATH_list, [joinpath(Sys.BINDIR, Base.LIBDIR, "julia"), joinpath(Sys.BINDIR, Base.LIBDIR)]), ':'))            end  # __init__()
 
