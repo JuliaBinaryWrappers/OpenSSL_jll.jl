@@ -96,5 +96,7 @@ function __init__()
     filter!(!isempty, unique!(LIBPATH_list))
     global PATH = join(PATH_list, ':')
     global LIBPATH = join(vcat(LIBPATH_list, [joinpath(Sys.BINDIR, Base.LIBDIR, "julia"), joinpath(Sys.BINDIR, Base.LIBDIR)]), ':')
+
+    
 end  # __init__()
 
