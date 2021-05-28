@@ -9,19 +9,19 @@ function __init__()
     JLLWrappers.@generate_init_header()
     JLLWrappers.@init_library_product(
         libcrypto,
-        "bin/libcrypto-1_1.dll",
+        "bin\\libcrypto-1_1.dll",
         RTLD_LAZY | RTLD_DEEPBIND,
     )
 
     JLLWrappers.@init_library_product(
         libssl,
-        "bin/libssl-1_1.dll",
+        "bin\\libssl-1_1.dll",
         RTLD_LAZY | RTLD_DEEPBIND,
     )
 
     JLLWrappers.@init_executable_product(
         openssl,
-        "bin/openssl.exe",
+        "bin\\openssl.exe",
     )
 
     JLLWrappers.@generate_init_footer()
