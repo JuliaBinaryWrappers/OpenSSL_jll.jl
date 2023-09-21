@@ -2,20 +2,20 @@
 export libcrypto, libssl, openssl
 
 JLLWrappers.@generate_wrapper_header("OpenSSL")
-JLLWrappers.@declare_library_product(libcrypto, "@rpath/libcrypto.1.1.dylib")
-JLLWrappers.@declare_library_product(libssl, "@rpath/libssl.1.1.dylib")
+JLLWrappers.@declare_library_product(libcrypto, "@rpath/libcrypto.3.dylib")
+JLLWrappers.@declare_library_product(libssl, "@rpath/libssl.3.dylib")
 JLLWrappers.@declare_executable_product(openssl)
 function __init__()
     JLLWrappers.@generate_init_header()
     JLLWrappers.@init_library_product(
         libcrypto,
-        "lib/libcrypto.1.1.dylib",
+        "lib/libcrypto.3.dylib",
         RTLD_LAZY | RTLD_DEEPBIND,
     )
 
     JLLWrappers.@init_library_product(
         libssl,
-        "lib/libssl.1.1.dylib",
+        "lib/libssl.3.dylib",
         RTLD_LAZY | RTLD_DEEPBIND,
     )
 
