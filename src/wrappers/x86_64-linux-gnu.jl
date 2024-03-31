@@ -9,13 +9,13 @@ function __init__()
     JLLWrappers.@generate_init_header()
     JLLWrappers.@init_library_product(
         libcrypto,
-        "lib64/libcrypto.so",
+        "lib/libcrypto.so",
         RTLD_LAZY | RTLD_DEEPBIND,
     )
 
     JLLWrappers.@init_library_product(
         libssl,
-        "lib64/libssl.so",
+        "lib/libssl.so",
         RTLD_LAZY | RTLD_DEEPBIND,
     )
 
