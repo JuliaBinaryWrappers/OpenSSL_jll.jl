@@ -1,151 +1,160 @@
 [[OpenSSL]]
 arch = "aarch64"
-git-tree-sha1 = "96d38e8912b961f0710ed6b522d0e44d1e5dc16a"
+git-tree-sha1 = "f7d4ded8121147b1c95fd800dc34f9cf0f96c9ed"
 os = "macos"
 
     [[OpenSSL.download]]
-    sha256 = "5c1580c3b684598054f5931d039079d2e819f4d5eab194017daaa026fda12761"
-    url = "https://github.com/JuliaBinaryWrappers/OpenSSL_jll.jl/releases/download/OpenSSL-v1.1.23+1/OpenSSL.v1.1.23.aarch64-apple-darwin.tar.gz"
+    sha256 = "0ae8d2f7be3b5414124d7eec119a5c26fa05bbcda714947b5c367781a7f12d9a"
+    url = "https://github.com/JuliaBinaryWrappers/OpenSSL_jll.jl/releases/download/OpenSSL-v3.0.15+2/OpenSSL.v3.0.15.aarch64-apple-darwin.tar.gz"
 [[OpenSSL]]
 arch = "aarch64"
-git-tree-sha1 = "a24af0024531c5dd759abba0c7ad3cd9c534970d"
+git-tree-sha1 = "8e01ffd8846592ecff8ea12ff1a47924c7c2bad7"
 libc = "glibc"
 os = "linux"
 
     [[OpenSSL.download]]
-    sha256 = "4e08f7f520810fbfa7c07ca187188ad09c211f34ae55df8d1a2043b242aec589"
-    url = "https://github.com/JuliaBinaryWrappers/OpenSSL_jll.jl/releases/download/OpenSSL-v1.1.23+1/OpenSSL.v1.1.23.aarch64-linux-gnu.tar.gz"
+    sha256 = "2e4648c89410d8654f229c01b054773729f536b95dd69703d3765ab3ef4b84a0"
+    url = "https://github.com/JuliaBinaryWrappers/OpenSSL_jll.jl/releases/download/OpenSSL-v3.0.15+2/OpenSSL.v3.0.15.aarch64-linux-gnu.tar.gz"
 [[OpenSSL]]
 arch = "aarch64"
-git-tree-sha1 = "0f56b775bfeae6ddddf01423d8315ff480b7219c"
+git-tree-sha1 = "b88c1c3333803db83da22e5c372c93f7da0dc8c2"
 libc = "musl"
 os = "linux"
 
     [[OpenSSL.download]]
-    sha256 = "d578f0cfce5b19a1c2c592644e0e384413de1fd543fd5d09cb7f11de0cb45789"
-    url = "https://github.com/JuliaBinaryWrappers/OpenSSL_jll.jl/releases/download/OpenSSL-v1.1.23+1/OpenSSL.v1.1.23.aarch64-linux-musl.tar.gz"
+    sha256 = "5f1fe709e4dd13f8bc2a5593513b354d95e5869c1018a5ce84ac52837fc9fbce"
+    url = "https://github.com/JuliaBinaryWrappers/OpenSSL_jll.jl/releases/download/OpenSSL-v3.0.15+2/OpenSSL.v3.0.15.aarch64-linux-musl.tar.gz"
 [[OpenSSL]]
 arch = "aarch64"
-git-tree-sha1 = "16ed5a1c1c67abd3f43b65543d5e2299b1bd5b05"
+git-tree-sha1 = "f7aaa2d51d577d293eb60e6b901b17360090e396"
 os = "freebsd"
 
     [[OpenSSL.download]]
-    sha256 = "eb2c7c232a86f17d9ec519ebc1b27450121d1f048f0d1d9cfa470182d52f0e03"
-    url = "https://github.com/JuliaBinaryWrappers/OpenSSL_jll.jl/releases/download/OpenSSL-v1.1.23+1/OpenSSL.v1.1.23.aarch64-unknown-freebsd.tar.gz"
+    sha256 = "977841313d3d3aaa7913cb026f44dbe58093fc9d37e9ef23ee951a55f989228d"
+    url = "https://github.com/JuliaBinaryWrappers/OpenSSL_jll.jl/releases/download/OpenSSL-v3.0.15+2/OpenSSL.v3.0.15.aarch64-unknown-freebsd.tar.gz"
 [[OpenSSL]]
 arch = "armv6l"
 call_abi = "eabihf"
-git-tree-sha1 = "01718946baee11635d1911cb83079905e56bdc33"
+git-tree-sha1 = "7530fe560eb2e5f3f9972ab036e14d9cce06eedc"
 libc = "glibc"
 os = "linux"
 
     [[OpenSSL.download]]
-    sha256 = "16cd9787d32fc5f3d5f8af9ab4736921594161809695d6327b32c1d40efd144c"
-    url = "https://github.com/JuliaBinaryWrappers/OpenSSL_jll.jl/releases/download/OpenSSL-v1.1.23+1/OpenSSL.v1.1.23.armv6l-linux-gnueabihf.tar.gz"
+    sha256 = "95fba279534c75e0b35e61f210ecf033d4f43e93d5faf6d33f0e57d4fd5485e0"
+    url = "https://github.com/JuliaBinaryWrappers/OpenSSL_jll.jl/releases/download/OpenSSL-v3.0.15+2/OpenSSL.v3.0.15.armv6l-linux-gnueabihf.tar.gz"
 [[OpenSSL]]
 arch = "armv6l"
 call_abi = "eabihf"
-git-tree-sha1 = "421c5368949ae8da911ee36017aa1537165a92be"
+git-tree-sha1 = "c65584f19a843377dcea93d2eb040fc3641502fd"
 libc = "musl"
 os = "linux"
 
     [[OpenSSL.download]]
-    sha256 = "ccbd3063baf2333a35771b0de5d1ef4ba5f80493664cfa246cd94d04470aae1f"
-    url = "https://github.com/JuliaBinaryWrappers/OpenSSL_jll.jl/releases/download/OpenSSL-v1.1.23+1/OpenSSL.v1.1.23.armv6l-linux-musleabihf.tar.gz"
+    sha256 = "d593b5655d0e0780ed4512cbd2fb377e0323ad717ebef032e316d6647f38cca1"
+    url = "https://github.com/JuliaBinaryWrappers/OpenSSL_jll.jl/releases/download/OpenSSL-v3.0.15+2/OpenSSL.v3.0.15.armv6l-linux-musleabihf.tar.gz"
 [[OpenSSL]]
 arch = "armv7l"
 call_abi = "eabihf"
-git-tree-sha1 = "7e8b6e31fd3772767f9afdb4d6cfb423ba42c66b"
+git-tree-sha1 = "e793d66461c20dce998c6a693e7e01e1cdb9ed8b"
 libc = "glibc"
 os = "linux"
 
     [[OpenSSL.download]]
-    sha256 = "49dd5873682ec9dfd12dcf2f027e07830fe497c0cde65551409af1aa2792a39d"
-    url = "https://github.com/JuliaBinaryWrappers/OpenSSL_jll.jl/releases/download/OpenSSL-v1.1.23+1/OpenSSL.v1.1.23.armv7l-linux-gnueabihf.tar.gz"
+    sha256 = "4612060fe86e9bc4fb0a47651cfc754b46aea0f76f7e7436dfaab9e5eb827c28"
+    url = "https://github.com/JuliaBinaryWrappers/OpenSSL_jll.jl/releases/download/OpenSSL-v3.0.15+2/OpenSSL.v3.0.15.armv7l-linux-gnueabihf.tar.gz"
 [[OpenSSL]]
 arch = "armv7l"
 call_abi = "eabihf"
-git-tree-sha1 = "7022dce033247ffc02373d05de8211f24acf32b2"
+git-tree-sha1 = "a09bec36a66d97aabc3e565438835bf02598a66d"
 libc = "musl"
 os = "linux"
 
     [[OpenSSL.download]]
-    sha256 = "73af8594b41d54d624fd4b8b0d934d0bf280b6b54d507309f234fe6edf6bde33"
-    url = "https://github.com/JuliaBinaryWrappers/OpenSSL_jll.jl/releases/download/OpenSSL-v1.1.23+1/OpenSSL.v1.1.23.armv7l-linux-musleabihf.tar.gz"
+    sha256 = "65a88cd9b35200a1d8854ca85eb691b570bda4674f980235f7a4479135664a4f"
+    url = "https://github.com/JuliaBinaryWrappers/OpenSSL_jll.jl/releases/download/OpenSSL-v3.0.15+2/OpenSSL.v3.0.15.armv7l-linux-musleabihf.tar.gz"
 [[OpenSSL]]
 arch = "i686"
-git-tree-sha1 = "1ab8fdb1c7af31c7a86f255b0a6fe76d4ac11cfd"
+git-tree-sha1 = "9a6a7605547a759e89ae160574d80376f7100938"
 libc = "glibc"
 os = "linux"
 
     [[OpenSSL.download]]
-    sha256 = "9b597ca6ff813af90c575a1df03003456116b3731f5595ed7284003460ccb896"
-    url = "https://github.com/JuliaBinaryWrappers/OpenSSL_jll.jl/releases/download/OpenSSL-v1.1.23+1/OpenSSL.v1.1.23.i686-linux-gnu.tar.gz"
+    sha256 = "926031c12d5d883268c5929b9eaaf13e0a340d5b25428fe7aecfc5a3ccc1fdfd"
+    url = "https://github.com/JuliaBinaryWrappers/OpenSSL_jll.jl/releases/download/OpenSSL-v3.0.15+2/OpenSSL.v3.0.15.i686-linux-gnu.tar.gz"
 [[OpenSSL]]
 arch = "i686"
-git-tree-sha1 = "e3a669c5048afcd0d7401ada322d9c46f9190a52"
+git-tree-sha1 = "9d665597286bda58d37d3542a3b98a80eb0c8586"
 libc = "musl"
 os = "linux"
 
     [[OpenSSL.download]]
-    sha256 = "a9c0a64bf9fdd4f20fdc85a5dea91ad1aa900688199a739b631bea3f2a1c9cd6"
-    url = "https://github.com/JuliaBinaryWrappers/OpenSSL_jll.jl/releases/download/OpenSSL-v1.1.23+1/OpenSSL.v1.1.23.i686-linux-musl.tar.gz"
+    sha256 = "45eadc06215994e4fe824222605084a31b8676fdf5898dce9094ea9889d6c62b"
+    url = "https://github.com/JuliaBinaryWrappers/OpenSSL_jll.jl/releases/download/OpenSSL-v3.0.15+2/OpenSSL.v3.0.15.i686-linux-musl.tar.gz"
 [[OpenSSL]]
 arch = "i686"
-git-tree-sha1 = "b7cd8579dbc0483fac8014e4c407a3cef7fbc0c7"
+git-tree-sha1 = "c39a899a8d4fc07c3bc7ac81409d63a42a54eb3e"
 os = "windows"
 
     [[OpenSSL.download]]
-    sha256 = "a4cd4f1cfea8683b54cb68c9d57234ef563d7c2a1342a856813075ab15f4caf1"
-    url = "https://github.com/JuliaBinaryWrappers/OpenSSL_jll.jl/releases/download/OpenSSL-v1.1.23+1/OpenSSL.v1.1.23.i686-w64-mingw32.tar.gz"
+    sha256 = "d50f94a2f1a18d0cc639e1f590c476849d75c2b5a65be55e128c24edc2ba5019"
+    url = "https://github.com/JuliaBinaryWrappers/OpenSSL_jll.jl/releases/download/OpenSSL-v3.0.15+2/OpenSSL.v3.0.15.i686-w64-mingw32.tar.gz"
 [[OpenSSL]]
 arch = "powerpc64le"
-git-tree-sha1 = "e484b64c7739acfcd8ab841c13de876a5584cb57"
+git-tree-sha1 = "4a2f8dfd0337717d1cea3c46d95158ca0463bfd7"
 libc = "glibc"
 os = "linux"
 
     [[OpenSSL.download]]
-    sha256 = "5535b2b72db56e71b2b35f35f57682b6aa4e491e90cad43dd4d3dd3b621a7bee"
-    url = "https://github.com/JuliaBinaryWrappers/OpenSSL_jll.jl/releases/download/OpenSSL-v1.1.23+1/OpenSSL.v1.1.23.powerpc64le-linux-gnu.tar.gz"
+    sha256 = "3e9484a89236fd070a3fb0b19f0fc61930473f238a46c8ee589f99482cd03962"
+    url = "https://github.com/JuliaBinaryWrappers/OpenSSL_jll.jl/releases/download/OpenSSL-v3.0.15+2/OpenSSL.v3.0.15.powerpc64le-linux-gnu.tar.gz"
+[[OpenSSL]]
+arch = "riscv64"
+git-tree-sha1 = "30e891dd0e7c48a25be0ee3a70b88a4d11015cf4"
+libc = "glibc"
+os = "linux"
+
+    [[OpenSSL.download]]
+    sha256 = "d6f8c5a30c66923dbe0aef8600ac50daab45173dc5c2afc79ea108a2af9321ef"
+    url = "https://github.com/JuliaBinaryWrappers/OpenSSL_jll.jl/releases/download/OpenSSL-v3.0.15+2/OpenSSL.v3.0.15.riscv64-linux-gnu.tar.gz"
 [[OpenSSL]]
 arch = "x86_64"
-git-tree-sha1 = "60fe7aa866e15cd125a88ae2ed9235c93be098ac"
+git-tree-sha1 = "2985bc1416e05fa821b2c0676fc6d7664f0e9972"
 os = "macos"
 
     [[OpenSSL.download]]
-    sha256 = "351914d8619d60fd45977e9dc2bcc118104876c2cb5468e8dacea0368347af2a"
-    url = "https://github.com/JuliaBinaryWrappers/OpenSSL_jll.jl/releases/download/OpenSSL-v1.1.23+1/OpenSSL.v1.1.23.x86_64-apple-darwin.tar.gz"
+    sha256 = "18be2110ed417987963fc4e4d90640264a9d605cf00cacb8e0574799694a5ea0"
+    url = "https://github.com/JuliaBinaryWrappers/OpenSSL_jll.jl/releases/download/OpenSSL-v3.0.15+2/OpenSSL.v3.0.15.x86_64-apple-darwin.tar.gz"
 [[OpenSSL]]
 arch = "x86_64"
-git-tree-sha1 = "b8d34ee4e90345d7eb92922388291b16787bc697"
+git-tree-sha1 = "a75f42b932c96f6ab5a0cee789bd78d7255a77da"
 libc = "glibc"
 os = "linux"
 
     [[OpenSSL.download]]
-    sha256 = "6f449f91e903e9d11bab8f49106df0e219ae3066a36156be1ed9b487d8f309f9"
-    url = "https://github.com/JuliaBinaryWrappers/OpenSSL_jll.jl/releases/download/OpenSSL-v1.1.23+1/OpenSSL.v1.1.23.x86_64-linux-gnu.tar.gz"
+    sha256 = "1d7b14e762406b49296e7763558e63148e5c9f75d09260bd4efbbb157a781a65"
+    url = "https://github.com/JuliaBinaryWrappers/OpenSSL_jll.jl/releases/download/OpenSSL-v3.0.15+2/OpenSSL.v3.0.15.x86_64-linux-gnu.tar.gz"
 [[OpenSSL]]
 arch = "x86_64"
-git-tree-sha1 = "af1046740e95303297933adeeaa24b375d47045b"
+git-tree-sha1 = "793f1d36ea122d82917a8c4318dd3bc82e44c0af"
 libc = "musl"
 os = "linux"
 
     [[OpenSSL.download]]
-    sha256 = "9c88501bc5c8c025a86fee2cfff9df2e8729a15adef34568100981a133345b46"
-    url = "https://github.com/JuliaBinaryWrappers/OpenSSL_jll.jl/releases/download/OpenSSL-v1.1.23+1/OpenSSL.v1.1.23.x86_64-linux-musl.tar.gz"
+    sha256 = "53ddb4bd0c1d4beb3a43b632f79a3a87c29d3c73f6e2b06c7f54942ff29931ef"
+    url = "https://github.com/JuliaBinaryWrappers/OpenSSL_jll.jl/releases/download/OpenSSL-v3.0.15+2/OpenSSL.v3.0.15.x86_64-linux-musl.tar.gz"
 [[OpenSSL]]
 arch = "x86_64"
-git-tree-sha1 = "2f715442e40909e6582ccc673ccc55a1f646c502"
+git-tree-sha1 = "a41b3e5b32d4ebdb9f0fe3884f9521ccb4f13a9f"
 os = "freebsd"
 
     [[OpenSSL.download]]
-    sha256 = "eb9f2f117578de380281dd4bb1b82f41476a5c5f101a76441edb66aea2b52316"
-    url = "https://github.com/JuliaBinaryWrappers/OpenSSL_jll.jl/releases/download/OpenSSL-v1.1.23+1/OpenSSL.v1.1.23.x86_64-unknown-freebsd.tar.gz"
+    sha256 = "aed4131f77bc014c9cce540125e630162d91cfc755e2401ed26cca98712b90d9"
+    url = "https://github.com/JuliaBinaryWrappers/OpenSSL_jll.jl/releases/download/OpenSSL-v3.0.15+2/OpenSSL.v3.0.15.x86_64-unknown-freebsd.tar.gz"
 [[OpenSSL]]
 arch = "x86_64"
-git-tree-sha1 = "635bd6971ef78a23e10641ff219d14159ba5057a"
+git-tree-sha1 = "c53c3e04c65ea29eec22f5e2e9f5411218da4f1a"
 os = "windows"
 
     [[OpenSSL.download]]
-    sha256 = "e7870920e0f8bda8edc01e12bb8e267a0e4623ba9b48521f5ccdc61031b8a799"
-    url = "https://github.com/JuliaBinaryWrappers/OpenSSL_jll.jl/releases/download/OpenSSL-v1.1.23+1/OpenSSL.v1.1.23.x86_64-w64-mingw32.tar.gz"
+    sha256 = "d2201821cdd80cdeb31e2573f3f4ea1b4e9db2aae0a69e09a4077e335c602a8f"
+    url = "https://github.com/JuliaBinaryWrappers/OpenSSL_jll.jl/releases/download/OpenSSL-v3.0.15+2/OpenSSL.v3.0.15.x86_64-w64-mingw32.tar.gz"
